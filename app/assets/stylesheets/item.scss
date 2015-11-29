@@ -165,25 +165,26 @@
   }
 }
 
-.one-rank{
-    border: 1px solid #ddd;
-    background: #fff;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    width:80%;
-    margin:20px auto;
+  .one-rank{
+    background-color:gray;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      width:80%;
+      margin:20px auto;
     
-  .rank-icon{
-    margin:10px;
-    margin-left:20px;
-    font-size:120%;
-    color:#dc143c;
+    .rank-icon{
+      margin:10px;
+      margin-left:20px;
+      font-size:120%;
+      color:#dc143c;
     
-  }
-  .rank-item{
-    margin:20px;
-    .title{
-      padding:10px;
+    }
+    .rank-item{
+      margin:20px;
+      .title{
+        padding:10px;
+      }
     }
   }
-}
