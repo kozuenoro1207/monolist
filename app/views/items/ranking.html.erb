@@ -1,3 +1,16 @@
-<% @item_wants.each do |t| %>
-   
+<% @rank_wants_item.each do |t| %>
+   <div class="one-rank" >
+       <div class="rank-icon">
+        <%= @rank_wants_id.index(t.id)+1 %>
+       </div>
+       <div class="rank-item">
+        <div class="title">
+          <% unless current_page?(t) %>
+            <%= link_to  t.title , t  %>
+          <% end %>
+        </div>
+    </div>
+   </div>
 <% end %>
+<%#= @rank_haves_item %>
+
