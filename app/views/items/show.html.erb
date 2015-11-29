@@ -28,7 +28,7 @@
         <div class="side-box-body">
           <% @item_haves_users.each do |haves_user| %>
             <span id ="haves-<%= haves_user.id %>">
-            <span class="have_user"><%= link_to gravatar_for haves_user, haves_user %></span>
+            <span class="have_user"><%= link_to gravatar_for(haves_user, size: 50), haves_user %></span>
             </span>
           <% end %>
         </div>
@@ -39,7 +39,7 @@
           <% # TODO Wantしたユーザー一覧 %>
             <% @item_wants_users.each do |wants_user| %>
             <span id ="wants-<%= wants_user.id %>">
-            <span class="want_user"><%= link_to gravatar_for wantss_user, wants_user %></span>
+            <span class="want_user"><%= link_to gravatar_for(wants_user,size:50), wants_user %></span>
             </span>
             <% end %>
           </span>
