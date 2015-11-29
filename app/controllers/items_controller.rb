@@ -16,6 +16,11 @@ class ItemsController < ApplicationController
     @item_haves_users = @item.haves_users
     @item_wants_users = @item.wants_users
   end
+  def ranking
+    @item_wants = Item.joins(:wants).group(:item_id).count(:item_id).sort_by{|k,v| v}.take(10)
+    @item_haves = Item.joins(:haves).group(:item_id).count(:item_id).sort_by{|k,v| v}.take(10)
+    
+  end
 
   private
   def set_item
